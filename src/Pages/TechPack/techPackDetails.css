@@ -1,0 +1,141 @@
+/* Table Container */
+.table_container_detail_page {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.style-detail-container {
+  overflow-x: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styles */
+.style-detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.style-detail-table th, 
+.style-detail-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #e0e0e0;
+  vertical-align: top;
+}
+
+.style-detail-header {
+  background-color: #f5f5f5;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.label_style {
+  font-weight: 600;
+  background-color: #f9f9f9;
+  width: 20%;
+}
+
+.value_style {
+  background-color: #fff;
+  width: 30%;
+}
+
+/* Image Columns */
+.image-column {
+  width: 33.33%;
+  vertical-align: top;
+  padding: 15px;
+}
+
+.image-column h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #444;
+  font-size: 1.1em;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.thumbnail {
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+  object-fit: cover;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Accessories Sections */
+.rivet_button_All {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accessory-section {
+  border-bottom: 1px dashed #e0e0e0;
+  padding-bottom: 15px;
+}
+
+.accessory-section:last-child {
+  border-bottom: none;
+}
+
+.accessory-details {
+  margin: 10px 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.accessory-details div {
+  margin-bottom: 5px;
+}
+
+/* Buttons */
+.upload-button {
+  margin-top: 10px !important;
+  width: 120px;
+  padding: 8px 12px !important;
+  font-size: 0.85em !important;
+  text-transform: none !important;
+  background-color: #4285f4 !important;
+}
+
+/* Modal for enlarged image */
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.image-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
